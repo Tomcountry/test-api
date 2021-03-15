@@ -3,6 +3,8 @@ import pandas as pd
 import time
 import os
 from os import environ
+import requests
+
 
 joker = environ["api"]
 batman = environ["secret"]
