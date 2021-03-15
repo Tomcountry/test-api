@@ -2,11 +2,11 @@ import ccxt
 import pandas as pd
 import time
 import os
-from os import environ
 
 
-apiKey = environ["api"]
-secret = environ["secret"]
+
+apiKey = os.environ.get("api")
+secret = os.environ.get("secret")
 exchange = ccxt.deribit({'apiKey': apiKey ,'secret': secret,'enableRateLimit': True,"urls": {"api": "https://test.deribit.com"}})
 
 
