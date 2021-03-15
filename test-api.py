@@ -17,7 +17,5 @@ dfMatchOrder1 = pd.DataFrame(exchange.fetchMyTrades("BTC-PERPETUAL",limit=3),
                                  columns=['id', 'datetime', 'symbol', 'side', 'price', 'amount', "fee"])
 
 while True:
-    print(joker)
-    print(batman)
     print(dfMatchOrder1)
     time.sleep(5)
